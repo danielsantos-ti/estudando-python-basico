@@ -1,6 +1,6 @@
 def myfunc():
     global x
-    x = "fantastic"
+    x = "fantastico"
 
 myfunc()
 print("Python is " + x)
