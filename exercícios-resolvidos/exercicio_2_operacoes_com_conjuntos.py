@@ -1,7 +1,13 @@
 # João e Maria gostam de filmes diferentes. João gosta de 'Inception', 'Interstellar' e 'The Dark Knight', enquanto Maria gosta de 'Inception', 'Titanic' e 'Avatar'. Usando conjuntos, encontre:
 # 1. Quais filmes ambos gostam.
-filmes_joao = {'Inception', 'Interstellar', 'The Dark Knight'}
-filmes_maria = {'Inception', 'Titanic', 'Avatar'}
+
+# 2. Quais filmes João gosta, mas Maria não.
+# filmes_joao = {'Inception', 'Interstellar', 'The Dark Knight'}
+# filmes_maria = {'Inception', 'Titanic', 'Avatar'}
+
+# 2. Quais filmes João gosta, mas Maria não.
+filmes_joao = frozenset(['Inception', 'Interstellar', 'The Dark Knight'])
+filmes_maria = frozenset(['Inception', 'Titanic', 'Avatar'])
 
 # Filmes que ambos gostam
 filmes_comuns = filmes_joao.intersection(filmes_maria)
